@@ -1,0 +1,52 @@
+.menu {
+  padding: 0px;
+  margin: 0px;
+
+  li {
+    display: inline-block;
+    text-align: center;
+
+    a {
+      border: solid 1px #CCCCCC;
+      display: block;
+      padding: 10px 0px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #AAAAAA;
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+.header1 {
+  li {
+    width: 20%;
+  }
+}
+
+.header2 {
+  background-color: #F5F8FF;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+
+  ul {
+    height: 100%;
+    width: 80%;
+
+    .left {
+      float: left;
+
+      .header-mini {
+        padding-left: 100px;
+      }
+    }
+
+    .text {
+      width: 100px;
+    }
+  }
+}

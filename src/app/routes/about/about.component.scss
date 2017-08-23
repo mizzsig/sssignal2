@@ -1,0 +1,28 @@
+$padding-left: 30px;
+
+.img-list {
+  display: inline-block;
+}
+
+.link-list {
+  list-style-type: none;
+  padding-left: $padding-left;
+}
+
+form {
+  padding-left: $padding-left;
+}
+
+p {
+  padding-left: $padding-left;
+}
+
+ul {
+  padding: 0px;
+}
+
+div {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
