@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="center-img" [@onAbout]='AboutFlag' [@onGame]='GameFlag' [@onSoft]='SoftFlag' [@onColumn]='ColumnFlag' [@onHistory]='HistoryFlag'>
+    <a routerLink="/about" class="content content-about" (mouseenter)='aboutMouseEnter()' (mouseleave)='aboutMouseLeave()'>
+      <p class="title content-child">About</p>
+      <p class="explain content-child">このサイトに<br />ついて</p>
+    </a>
+    <a routerLink="/game" class="content content-game" (mouseenter)='gameMouseEnter()' (mouseleave)='gameMouseLeave()'>
+      <p class="title content-child">Game</p>
+      <p class="explain content-child">作ったゲーム</p>
+    </a>
+    <a routerLink="/soft" class="content content-soft" (mouseenter)='softMouseEnter()' (mouseleave)='softMouseLeave()'>
+      <p class="title content-child">Soft</p>
+      <p class="explain content-child">作ったもの<br />(ゲーム以外)</p>
+    </a>
+    <a routerLink="/column" class="content content-column" (mouseenter)='columnMouseEnter()' (mouseleave)='columnMouseLeave()'>
+      <p class="title content-child">Column</p>
+      <p class="explain content-child">書いた記事一覧</p>
+    </a>
+    <a href="#" class="content content-history" (mouseenter)='historyMouseEnter()' (mouseleave)='historyMouseLeave()'>
+      <p class="title content-child">History</p>
+      <p class="explain content-child">このサイトが<br />できるまで</p>
+    </a>
+  </div>
+  <div class="dust-aboutimg"></div>
+  <div class="dust-gameimg"></div>
+  <div class="dust-softimg"></div>
+  <div class="dust-columnimg"></div>
+  <div class="dust-historyimg"></div>
+</div>

@@ -1,0 +1,33 @@
+.main {
+  background-color: rgba(#FFFFFF, 0.8);
+  border: 3px solid #6363F0;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+  max-width: 1200px;
+  padding: 10px;
+
+  .section {
+    padding: 10px 0px;
+
+    .section-title {
+      font-size: 24px;
+
+      background-color: rgba(#0000FF, 0.2);
+
+      border-bottom: 1px solid #8383F0;
+      padding-bottom: 3px;
+    }
+
+    .section-content {
+      margin-left: 30px;
+    }
+
+    ul {
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}

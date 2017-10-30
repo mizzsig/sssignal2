@@ -1,16 +1,20 @@
-# sssignal2
-ウェブサイトバージョン2
+# 水飴信号２ MEANスタックバージョン
 
-MEANスタックにしようと試みています
+## 概要
+---
+自分のホームページをMEANスタックで作りました  
+SPAとの相性は悪そうだなと思ったので作り直します
 
-## 必要な環境
-- Node.js ver6.9以上
-- npm ver3以上
-- @angular/cli 1.3 (npmのパッケージ)
+## 導入方法
+```
+$ git clone https://github.com/mizzsig/sssignal2.git
+$ cd sssignal2
+$ npm install
+$ node server.js
+```
+で3000番ポートにサーバが立つはず！
 
-## インストール方法
-1. このリポジトリをクローン
-2. `npm install`
-3. `ng serve`
-
-でインストールとサーバの起動ができるので、localhost:4200にアクセスすれば見ることができるはず
+src以下の部分を変更してビルドし直すときは
+```
+$ ng build -prod -aot
+```

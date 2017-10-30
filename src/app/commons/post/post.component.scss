@@ -1,0 +1,58 @@
+$postWidth: 350px;
+$postAbsHeight: 260px;
+
+.post {
+  width: $postWidth;
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+
+  border: 3px solid #9090FF;
+  border-radius: 8px;
+
+  & .post-img {
+    transition: all 0.3s ease;
+  }
+
+  &:hover .post-img {
+    opacity: 0.0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .post-top {
+    position: relative;
+    width: $postWidth;
+    height: $postAbsHeight;
+    background-color: #FFFFFF;
+
+    .post-img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: $postWidth;
+      height: $postAbsHeight;
+      background-size: cover;
+    }
+
+    .post-abstract {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 0px 10px;
+    }
+  }
+
+  .post-info {
+    background-color: #FFFFFF;
+    padding: 10px;
+
+    .post-title {
+      margin-left: 30px;
+    }
+  }
+
+}

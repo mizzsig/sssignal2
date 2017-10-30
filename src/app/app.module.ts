@@ -1,33 +1,44 @@
-import { BrowserModule } from '@angular/platform-browser';
+// node_module からインポートしたもの
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
-
-import { MY_ROUTES } from './app.routing';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+// Angularでアニメーションを実装するためのモジュール
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// App本体
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './commons/header/header.component';
-import { TopComponent } from './routes/top/top.component';
+// ルーティング
+import { MY_ROUTES } from './app.routing';
+// ルーティング用コンポーネント
+import { IndexComponent } from './routes/index/index.component';
 import { AboutComponent } from './routes/about/about.component';
-import { MainComponent } from './commons/main/main.component';
-import { SubComponent } from './commons/sub/sub.component';
-
+import { GameComponent } from './routes/game/game.component';
+import { SoftComponent } from './routes/soft/soft.component';
+import { ColumnComponent } from './routes/column/column.component';
+import { ArticleComponent } from './routes/article/article.component';
+// UI部品
+import { HeaderComponent } from './commons/header/header.component';
+import { PostComponent } from './commons/post/post.component';
+// サービス
+import { PostService } from './commons/post/post.service';
 @NgModule({
   declarations: [
     AppComponent,
+    IndexComponent,
+    AboutComponent,
     HeaderComponent,
-    TopComponent,
-    MainComponent,
-    SubComponent,
-    AboutComponent
+    SoftComponent,
+    GameComponent,
+    ColumnComponent,
+    PostComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    Ng4TwitterTimelineModule,
+    BrowserAnimationsModule,
+    HttpModule,
     MY_ROUTES
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

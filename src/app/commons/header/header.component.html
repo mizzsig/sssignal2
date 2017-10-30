@@ -1,19 +1,12 @@
-<div class="header1">
-  <img src="/assets/img/sssver2.png" />
+<div class="header">
   <ul class="menu">
-    <li *ngFor="let m of menu">
-      <a routerLink={{m.url}}>{{m.text}}</a>
+    <li class="left">
+      <a routerLink="/"><img class="header-mini" src="/assets/header_mini.png" /></a>
+    </li>
+    <li class="text left" *ngFor="let m of menu">
+      <a routerLink={{m.url}} class="link-text">{{m.text}}</a>
     </li>
   </ul>
 </div>
 
-<div class="header2">
-  <ul class="menu">
-    <li class="left">
-      <img class="header-mini" src="/assets/img/header_mini.png" />
-    </li>
-    <li class="text left" *ngFor="let m of menu">
-      <a routerLink={{m.url}}>{{m.text}}</a>
-    </li>
-  </ul>
-</div>
+<div class="header-padding"></div>

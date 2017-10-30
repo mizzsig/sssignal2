@@ -8,11 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   readonly menu = [
-    { "text" : "Top", "url" : "/" },
-    { "text" : "About", "url" : "/about" },
-    { "text" : "Soft", "url" : "/soft" },
-    { "text" : "Game", "url" : "/game" },
-    { "text" : "Column", "url" : "/column"}
+     { "text" : "About", "url" : "/about" }
+    ,{ "text" : "Game", "url" : "/game" }
+    ,{ "text" : "Soft", "url" : "/soft" }
+    ,{ "text" : "Column", "url" : "/column"}
   ];
 
   constructor() { }
